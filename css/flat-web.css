@@ -1,1 +1,141 @@
-/* css */
+
+/*
+ *
+ * General Styling
+ * 
+ */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font: 16px 'Open Sans', Arial, Helvetica, sans-serif; /* 16px */
+    line-height: 1.2em;
+    color: #55606E;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 100%; /* width: 1140px; */
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container:after,
+.blocks:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav__item {
+    display: inline;
+}
+
+/*
+ *
+ * Header
+ * 
+ */
+
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    min-height: 56px;
+    transition: min-height 0.3s;
+}
+
+
+@media screen and (max-width: 610px) {
+    .header__logo {
+        height: 48px;
+        margin-right: 0.5em;
+    }
+    .header__title {
+        margin-left: 0;
+        font-size: 2em;
+        vertical-align: bottom;
+    }
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+    .header__menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+    }
+    .header__menu svg {
+        width: 32px;
+        fill: #E0E0E0;
+    }
+}
+
+/*
+ *
+ * Hero
+ * 
+ */
+
+.hero {
+    background: #333 url(../images/hero.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    max-width: 1360px;
+    max-height: 300px;
+    height: auto; 
+}
+
+/*
+ *
+ * Responsive
+ * 
+ */
+
+@media screen and (min-width: 610px) {
+    .header__menu svg {
+        display: none;
+        width: 32px;
+        fill: #E0E0E0;
+    }
+}
