@@ -17,7 +17,7 @@ html {
 
 body {
     font: 16px 'Open Sans', Arial, Helvetica, sans-serif; /* 16px */
-    line-height: 1.2em;
+    line-height: 1.0em;
     color: #55606E;
 }
 
@@ -68,6 +68,51 @@ li {
 }
 
 
+/*
+ *
+ * Hero
+ * 
+ */
+
+.hero .container {
+    height: 300px;  
+    max-width: 100%;
+    max-height: auto; 
+}
+
+.hero {
+    background: #333 url(../images/hero.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 300px;  
+    max-width: 100%;
+    max-height: auto;
+}
+
+.hero h1 {
+    font-weight: 300;
+    font-size: 10vh;
+    color: #9affff;
+    line-height: .8em;
+    text-shadow: 2px 2px 2px #257a9f;
+    float: left;
+    padding: 20px;
+}
+
+.hero-item {
+    background: url(../images/hero-item.png);
+    position: absolute;
+    height:300px; 
+    max-width: 100%;
+    max-height: auto;
+    float: right;
+}
+
+/*
+ *
+ * Responsive
+ * 
+ */
+
 @media screen and (max-width: 610px) {
     .header__logo {
         height: 48px;
@@ -111,31 +156,16 @@ li {
     }
 }
 
-/*
- *
- * Hero
- * 
- */
-
-.hero {
-    background: #333 url(../images/hero.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    width: 100%;
-    max-width: 1360px;
-    max-height: 300px;
-    height: auto; 
-}
-
-/*
- *
- * Responsive
- * 
- */
-
 @media screen and (min-width: 610px) {
     .header__menu svg {
         display: none;
         width: 32px;
         fill: #E0E0E0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hero h1 {
+        font-size: 8vh;
     }
 }
