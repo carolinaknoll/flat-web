@@ -109,6 +109,69 @@ li {
 
 /*
  *
+ * Benefits
+ * 
+ */
+
+.benefits .container {
+    height: 460px;  
+    max-width: 100%;
+    max-height: auto; 
+}
+
+.benefits {
+    background: #eee;
+    background-size: cover;
+    
+}
+
+.benefits-block {
+    display: inline;
+    background: #FFF;
+    width: 265px;
+    height: 350px;
+    margin: auto;
+    margin-left: 20px;
+    position: relative;
+    float: center;
+}
+
+.benefits-block__upper {
+    background: #54add7;
+    border: 1px solid #4793b7;
+    border-bottom: 3px solid #4793b7;
+    width: 265px;
+    height: 55px;
+}
+
+.benefits-block__bottom {
+    width: 265px;
+    height: 300px;
+    border: 1px solid #cecece;
+    border-bottom: 3px solid #cecece;
+}
+
+.benefits-block {
+    float: left;
+    width: 265px;
+    margin-bottom: 20px;
+}
+
+.upper__text {
+    font-weight: 400;
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    text-shadow: 2px 2px 1px #444;
+}
+
+
+
+
+
+
+/*
+ *
  * Responsive
  * 
  */
