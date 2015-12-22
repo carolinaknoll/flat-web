@@ -115,13 +115,21 @@ li {
 
 .benefits .container {
     height: 460px;  
-    max-width: 100%;
-    max-height: auto; 
+    min-width: 100%;
+    max-height: auto;
+    
+    
 }
 
 .benefits {
+    padding-top: 4em;
+    padding-bottom: 4em;
     background: #eee;
     background-size: cover;
+    display: block;
+    height: 460px;  
+    min-width: 100%;
+    max-height: 100%;
     
 }
 
@@ -133,7 +141,7 @@ li {
     margin: auto;
     margin-left: 20px;
     position: relative;
-    float: center;
+    display: center;
 }
 
 .benefits-block__upper {
@@ -165,9 +173,42 @@ li {
     text-shadow: 2px 2px 1px #444;
 }
 
+/*
+ *
+ * Advantages
+ * 
+ */
+
+.advantages {
+    background: #6ec3ed;
+    background-size: cover;
+    height: 300px;  
+    max-width: 100%;
+    max-height: auto;
+    position:inherit;
+    max-height: 100%;
+    
+    
+}
+
+/*
+ *
+ * Footer
+ * 
+ */
+
+footer {
+    background: #3a3a3a;
+    background-size: cover;
+    height: 280px;  
+    max-width: 100%;
+    max-height: auto;
+}
 
 
-
+footer a {
+    color: #8e8e8e;
+}
 
 
 /*
@@ -231,4 +272,9 @@ li {
     .hero h1 {
         font-size: 8vh;
     }
+    
+    .footer__column {
+    display: inline;
+    }
+    
 }
