@@ -55,6 +55,8 @@ li {
     display: inline;
 }
 
+
+
 /*
  *
  * Header
@@ -113,23 +115,15 @@ li {
  * 
  */
 
-.benefits .container {
-    height: 460px;  
-    min-width: 100%;
-    max-height: auto;
-    
-    
-}
-
 .benefits {
     padding-top: 4em;
     padding-bottom: 4em;
     background: #eee;
     background-size: cover;
-    display: block;
     height: 460px;  
-    min-width: 100%;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: auto;
+    border-bottom: 3px solid #5ea6ca; 
     
 }
 
@@ -162,7 +156,6 @@ li {
 .benefits-block {
     float: left;
     width: 265px;
-    margin-bottom: 20px;
 }
 
 .upper__text {
@@ -187,10 +180,29 @@ li {
     max-height: auto;
     position:inherit;
     max-height: 100%;
-    
-    
 }
 
+.column {
+    width: 550px;
+    height: 160px;
+    text-align: center;
+}
+
+/*
+ *
+ * Small Hero
+ * 
+ */
+
+.small-hero {
+    height: 120px;
+    background-color: #255e7a; 
+}
+
+.small-hero__title {
+    color: #FFF;
+    font-weight: 300;     
+}
 /*
  *
  * Footer
