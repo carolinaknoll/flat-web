@@ -195,16 +195,22 @@ li {
  * 
  */
 
-.small-hero {
+.small-hero { 
+    position: absolute;
+    display: table; 
     height: 120px;
-    max-width: 100%;
+    min-width: 100%;
     max-height: auto;
-    background-color: #255e7a; 
+    background-color: #255e7a;
+    line-height: 1.5em;
 }
 
-.small-hero__title {
+.small-hero__title { /*
+    position: relative; */
     color: #FFF;
     font-weight: 300;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
 }
 
