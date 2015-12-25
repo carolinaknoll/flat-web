@@ -79,16 +79,18 @@ li {
 .hero .container {
     height: 300px;  
     max-width: 100%;
-    max-height: auto; 
+    max-height: auto;   
 }
 
 .hero {
     background: #333 url(../images/hero.jpg) no-repeat 50% 50%;
     background-size: cover;
     height: 300px;  
-    max-width: 100%;
+    max-width: 100%; /* min max */
     max-height: auto;
     border-bottom: 4px solid #e2e2e2;
+    
+    position: relative; 
 }
 
 .hero h1 {
@@ -99,6 +101,10 @@ li {
     text-shadow: 2px 2px 2px #257a9f;
     float: left;
     padding: 20px;
+    
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
 }
 
 .hero-item {
@@ -122,10 +128,9 @@ li {
     background: #eee;
     background-size: cover;
     height: 460px;  
-    max-width: 100%;
+    min-width: 100%; /* */
     max-height: auto;
-    border-bottom: 3px solid #5ea6ca; 
-    
+    border-bottom: 3px solid #5ea6ca;     
 }
 
 .benefits-block {
@@ -177,16 +182,30 @@ li {
     background: #6ec3ed;
     background-size: cover;
     height: 300px;  
-    max-width: 100%;
+    min-width: 100%;
     max-height: auto;
     position:inherit;
     max-height: 100%;
+    
+    position: absolute; 
+    display: table;
 }
 
 .column {
     width: 550px;
     height: 160px;
     text-align: center;
+    background-color: #fff;
+    border: 1px solid #5ea6ca;
+    border-bottom: 3px solid #5ea6ca;
+    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.column__item {
+    padding-bottom: 5px;
 }
 
 /*
@@ -205,13 +224,30 @@ li {
     line-height: 1.5em;
 }
 
-.small-hero__title { /*
-    position: relative; */
+.small-hero__title { 
+    position: relative; 
     color: #FFF;
     font-weight: 300;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+}
+
+/*
+ *
+ * Featured
+ * 
+ */
+
+.featured {
+    background-color: #FFF;
+    height: 285px;
+    min-width: 100%;
+    max-height: auto;
+}
+
+.featured-list li {
+    display: inline;
 }
 
 /*
@@ -224,8 +260,11 @@ footer {
     background: #3a3a3a;
     background-size: cover;
     height: 280px;  
-    max-width: 100%;
+    min-width: 100%;
     max-height: auto;
+
+    position: absolute; 
+    display: table;
 }
 
 
@@ -233,6 +272,23 @@ footer a {
     color: #8e8e8e;
 }
 
+.footer__title {
+    height: 42px;
+    width: 263px;
+    background-color: #656565;
+    border: 1px outset #313131;
+    border-bottom: 3px outset #313131;
+    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+    color: #FFF;
+}
+
+.footer__column ul {
+    display: inline;
+}
 
 /*
  *
@@ -281,6 +337,13 @@ footer a {
         width: 32px;
         fill: #E0E0E0;
     }
+    
+    .small-hero__title {
+        font-size: 1.3em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
 }
 
 @media screen and (min-width: 610px) {
