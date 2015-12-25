@@ -63,7 +63,7 @@ li {
  * 
  */
 
-.header {
+.header {  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     min-height: 56px;
     transition: min-height 0.3s;
@@ -88,6 +88,7 @@ li {
     height: 300px;  
     max-width: 100%;
     max-height: auto;
+    border-bottom: 4px solid #e2e2e2;
 }
 
 .hero h1 {
@@ -196,13 +197,17 @@ li {
 
 .small-hero {
     height: 120px;
+    max-width: 100%;
+    max-height: auto;
     background-color: #255e7a; 
 }
 
 .small-hero__title {
     color: #FFF;
-    font-weight: 300;     
+    font-weight: 300;
+    text-align: center;
 }
+
 /*
  *
  * Footer
