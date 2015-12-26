@@ -230,6 +230,11 @@ li {
 
 .column__item {
     padding-bottom: 5px;
+    color: #9b9b9b;
+}
+
+.column__item .fa {
+    color: #37e444;
 }
 
 /*
