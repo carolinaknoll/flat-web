@@ -172,6 +172,30 @@ li {
     text-shadow: 2px 2px 1px #444;
 }
 
+.bottom__text {
+    text-align: center;
+    font-size: 0.9em;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.benefits-block a {
+    color: #5ea6ca;
+    text-align: center;
+}
+
+.benefits-block .fa {
+    color: #c9c9c9;
+    text-align: center;
+    font-size: 3em;
+    border: 8px solid #c9c9c9;
+    border-radius: 90%;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
 /*
  *
  * Advantages
@@ -286,7 +310,11 @@ footer a {
     color: #FFF;
 }
 
-.footer__column ul {
+.footer__column {
+    display: inline;
+}
+
+footer div {
     display: inline;
 }
 
