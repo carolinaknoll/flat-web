@@ -69,6 +69,28 @@ li {
     transition: min-height 0.3s;
 }
 
+/*
+ *
+ * Nav
+ * 
+ */
+
+.nav {
+    float:right;
+    color: red;
+}
+
+.nav li {
+    float: left;
+    top: 0;
+}
+
+.container:after {
+    /* clearfix so header and background can be seen */
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*
  *
