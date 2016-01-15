@@ -60,17 +60,31 @@ li {
     clear: both;
 }
 
-
 /*
  *
  * Header
  * 
  */
 
+.header-container {
+	background: #fff; 
+	padding: 1.5rem 0;
+    display: inline;
+}
+
 .header {  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px, 0px, 5px, 0px, rgba(0, 0, 0, 0.26);
     min-height: 56px;
     transition: min-height 0.3s;
+    text-align: center;
+    display: inline;
+}
+
+.header__logo {
+    display: inline-block;
+    text-indent: -9999px;
+    margin: 1rem 0;
+    float: left;
 }
 
 /*
@@ -79,18 +93,15 @@ li {
  * 
  */
 
-.nav { 
-    float:right; 
+/*
+.header .nav { 
+    display: inline; 
     
-}
+} */
 
 .nav li {
-    float: left;
-    
-}
-
-.nav li a {
     color: red;
+    display: inline;
 }
 
 /*
@@ -253,8 +264,7 @@ li {
     min-width: 100%;
     max-height: auto;
     position:inherit;
-    max-height: 100%;
-    
+    max-height: 100%;   
     position: absolute; 
     display: table;
 }
@@ -265,8 +275,7 @@ li {
     text-align: center;
     background-color: #fff;
     border: 1px solid #5ea6ca;
-    border-bottom: 3px solid #5ea6ca;
-    
+    border-bottom: 3px solid #5ea6ca;   
     display: table-cell;
     vertical-align: middle;
     text-align: left;
@@ -329,19 +338,18 @@ li {
  * 
  */
 
-footer {
+.footer {
     background: #3a3a3a;
     background-size: cover;
-    height: 280px;  
+    height: 280px;
     min-width: 100%;
     max-height: auto;
-
-    position: absolute; 
+    position: absolute;
     display: table;
 }
 
-
-footer a {
+.footer a,
+p {
     color: #8e8e8e;
 }
 
@@ -350,21 +358,50 @@ footer a {
     width: 263px;
     background-color: #656565;
     border: 1px outset #313131;
-    border-bottom: 3px outset #313131;
-    
+    border-bottom: 3px outset #2f2f2f;   
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
-    
+    text-align: center;   
     color: #FFF;
 }
 
 .footer__column {
-    display: inline;
+    float: left;
+    width: 260px;
+    padding-top: 60px;
+    padding-right: 20px;
 }
 
-footer div {
-    display: inline;
+.footer__list-item a:before {
+    content: url('../images/footer-caret.png');
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer__list-item-c {
+    margin-top: 10px;
+}
+
+.footer__list-item {
+    padding: 10px 0px 0px 20px;
+}
+
+.footer__contact {
+    text-align: center;
+    right: 0px;
+}
+
+.footer__contact a {
+    text-decoration: underline;
+}
+
+.footer__contact li:first-child {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.footer__paypal {
+    padding-left: 110px;
 }
 
 /*
