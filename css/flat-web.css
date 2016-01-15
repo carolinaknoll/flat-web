@@ -15,14 +15,21 @@ html {
     box-sizing: border-box;
 }
 
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+ 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} 
 
 body {
-    font: 16px 'Open Sans', Arial, Helvetica, sans-serif; /* 16px */
+    font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
     line-height: 1.0em;
     color: #55606E;
 }
@@ -36,9 +43,6 @@ a:hover {
     text-decoration: underline;
 }
 
-footer ul {
-    display: inline;
-}
 
 li {
     list-style-type: none;
@@ -50,17 +54,11 @@ li {
     margin: 0 auto;
 }
 
-.container:after,
-.blocks:after {
+.container:after {
     content: "";
     display: table;
     clear: both;
 }
-
-.nav__item {
-    display: inline;
-}
-
 
 
 /*
@@ -81,21 +79,39 @@ li {
  * 
  */
 
-.nav {
-    float:right;
-    color: red;
+.nav { 
+    float:right; 
+    
 }
 
 .nav li {
     float: left;
-    top: 0;
+    
 }
 
-.container:after {
-    /* clearfix so header and background can be seen */
-    content: "";
-    display: table;
-    clear: both;
+.nav li a {
+    color: red;
+}
+
+/*
+ *
+ * Search
+ * 
+ */
+
+.search__form {
+    display: inline-block;
+    width: 15rem;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.search__box {
+    padding: 6px 20px 6px 5px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    position: relative;
+    background: url('http://i.imgur.com/zxVlIlB.png') no-repeat 185px center;
 }
 
 /*
