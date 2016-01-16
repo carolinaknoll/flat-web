@@ -237,6 +237,11 @@ li {
 .benefits-block a {
     color: #5ea6ca;
     text-align: center;
+    padding-top: 20px;
+}
+
+.bb_a {
+    text-align: center;
 }
 
 .benefits-block .fa {
@@ -262,32 +267,39 @@ li {
     background-size: cover;
     height: 320px;  
     min-width: 100%;
-    max-height: auto;
-    position:inherit;
-    max-height: 100%;   
-    position: absolute; 
-    display: table;
+    min-height: auto;
+    position:inherit; 
+    max-height: 100%;
+}
+
+.advantages__text {
+    padding: 35px 0px 45px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
 }
 
 .column {
-    width: 550px;
+    width: 550px; /* 550px; */
     height: 160px;
-    text-align: center;
     background-color: #fff;
     border: 1px solid #5ea6ca;
-    border-bottom: 3px solid #5ea6ca;   
-    display: table-cell;
-    vertical-align: middle;
-    text-align: left;
+    border-bottom: 3px solid #5ea6ca;
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: justify;    
 }
 
 .column__item {
     padding-bottom: 5px;
     color: #9b9b9b;
+    position: relative;
+    padding: 0px 5px 15px 15px;
 }
 
-.column__item .fa {
-    color: #37e444;
+.column__item:before {
+    content: url('../images/advantages-caret.png');
 }
 
 /*
