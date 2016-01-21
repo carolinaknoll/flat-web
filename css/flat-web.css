@@ -131,11 +131,12 @@ li {
  * 
  */
 
+/*
 .hero .container {
     height: 300px;  
     max-width: 100%;
     max-height: auto;   
-}
+} */
 
 .hero {
     background: #333 url(../images/hero.jpg) no-repeat 50% 50%;
@@ -143,6 +144,7 @@ li {
     height: 300px;  
     max-width: 100%; /* min max */
     max-height: auto;
+    
     border-bottom: 4px solid #e2e2e2;
     
     position: relative; 
@@ -240,10 +242,6 @@ li {
     padding-top: 20px;
 }
 
-.bb_a {
-    text-align: center;
-}
-
 .benefits-block .fa {
     color: #c9c9c9;
     text-align: center;
@@ -308,9 +306,8 @@ li {
  * 
  */
 
-.small-hero { 
-    position: absolute;
-    display: table; 
+.small-hero {  
+    display: table;  
     height: 120px;
     min-width: 100%;
     max-height: auto;
@@ -320,10 +317,11 @@ li {
 
 .small-hero__title { 
     position: relative; 
+    margin: 0;
     color: #FFF;
-    font-weight: 300;
-    display: table-cell;
-    vertical-align: middle;
+    font-weight: 300; 
+    display: table-cell; 
+    vertical-align: middle; 
     text-align: center;
 }
 
@@ -340,8 +338,9 @@ li {
     max-height: auto;
 }
 
-.featured-list li {
+.featured-list__logo {
     display: inline;
+    padding: 50px 15px 50px 15px;
 }
 
 /*
