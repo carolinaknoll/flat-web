@@ -299,19 +299,20 @@ li {
 
 .small-hero {
     background-color: #255e7a;
-    line-height: 1.5em;
     width: 100%;
     position: relative;
     background-size: cover;
     min-height: 120px;
+    display: flex;
+    align-items: center;
 }
 
 .small-hero__title { 
-    position: relative; 
-    margin: 0;
+    position: relative;
     color: #FFF;
     font-weight: 300; 
     text-align: center;
+    line-height: 1.5em;
 }
 
 /*
