@@ -66,7 +66,7 @@ li {
  * 
  */
 
-.header-container {
+.header container {
 	background: #fff; 
 	padding: 1.5rem 0;
     display: inline;
@@ -118,6 +118,7 @@ li {
 }
 
 .search__box {
+    display: block;
     padding: 6px 20px 6px 5px;
     border: 1px solid #bdbdbd;
     border-radius: 5px;
@@ -131,23 +132,13 @@ li {
  * 
  */
 
-/*
-.hero .container {
-    height: 300px;  
-    max-width: 100%;
-    max-height: auto;   
-} */
-
 .hero {
     background: #333 url(../images/hero.jpg) no-repeat 50% 50%;
     background-size: cover;
-    height: 300px;  
-    max-width: 100%; /* min max */
-    max-height: auto;
-    
     border-bottom: 4px solid #e2e2e2;
-    
-    position: relative; 
+    width: 100%;
+    position: relative;
+    min-height: 300px;
 }
 
 .hero h1 {
@@ -184,10 +175,11 @@ li {
     padding-bottom: 4em;
     background: #eee;
     background-size: cover;
-    height: 460px;  
-    min-width: 100%; /* */
-    max-height: auto;
     border-bottom: 3px solid #5ea6ca;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    min-height: 460px;
 }
 
 .benefits-block {
@@ -262,12 +254,11 @@ li {
 
 .advantages {
     background: #6ec3ed;
+    background-size: cover; 
+    width: 100%;
+    position: relative;
     background-size: cover;
-    height: 320px;  
-    min-width: 100%;
-    min-height: auto;
-    position:inherit; 
-    max-height: 100%;
+    min-height: 320px;
 }
 
 .advantages__text {
@@ -279,7 +270,7 @@ li {
 }
 
 .column {
-    width: 550px; /* 550px; */
+    width: 550px;
     height: 160px;
     background-color: #fff;
     border: 1px solid #5ea6ca;
@@ -306,13 +297,13 @@ li {
  * 
  */
 
-.small-hero {  
-    display: table;  
-    height: 120px;
-    min-width: 100%;
-    max-height: auto;
+.small-hero {
     background-color: #255e7a;
     line-height: 1.5em;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    min-height: 120px;
 }
 
 .small-hero__title { 
@@ -320,8 +311,6 @@ li {
     margin: 0;
     color: #FFF;
     font-weight: 300; 
-    display: table-cell; 
-    vertical-align: middle; 
     text-align: center;
 }
 
@@ -333,9 +322,10 @@ li {
 
 .featured {
     background-color: #FFF;
-    height: 285px;
-    min-width: 100%;
-    max-height: auto;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    min-height: 285px;
 }
 
 .featured-list__logo {
@@ -352,11 +342,10 @@ li {
 .footer {
     background: #3a3a3a;
     background-size: cover;
-    height: 280px;
-    min-width: 100%;
-    max-height: auto;
-    position: absolute;
-    display: table;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    min-height: 280px;
 }
 
 .footer a,
