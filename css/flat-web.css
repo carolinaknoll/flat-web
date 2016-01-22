@@ -326,12 +326,19 @@ li {
     width: 100%;
     position: relative;
     background-size: cover;
-    min-height: 285px;
+    min-height: 285px;  
+    display: flex;
+    align-items: center;
 }
 
 .featured-list__logo {
+    position: relative;
     display: inline;
-    padding: 50px 15px 50px 15px;
+}
+
+.featured ul,
+.featured ul li {
+    padding: 20px !important;
 }
 
 /*
@@ -471,6 +478,7 @@ p {
         width: 32px;
         fill: #E0E0E0;
     }
+    
 }
 
 @media screen and (min-width: 800px) {
