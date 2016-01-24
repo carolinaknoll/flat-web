@@ -461,6 +461,18 @@ p {
         fill: #E0E0E0;
     }
     
+    .ben-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .ben-div .benefits-block {
+        margin: auto !important;
+        margin-bottom: 20px !important;
+    }
+    
+    
     .small-hero__title {
         font-size: 1.4em;
         padding: 0px 10px 0px 10px;
@@ -496,7 +508,7 @@ p {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .advantages .column {
         display: block;
     }
@@ -505,5 +517,11 @@ p {
         margin: auto !important;
         margin-bottom: 20px !important;
     }
+    
+    .benefits-block {
+        margin: auto !important;
+        margin: 20px !important;
+    }
+
 }
 
