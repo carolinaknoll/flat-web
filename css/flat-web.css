@@ -89,7 +89,7 @@ li {
 
 /*
  *
- * Nav
+ * Navigation
  * 
  */
 
@@ -99,10 +99,39 @@ li {
     
 } */
 
+.nav {
+    margin: 1rem 0 2rem 0;
+    padding: .5rem;
+    border: none;
+    
+}
+
 .nav li {
-    color: red;
     display: inline;
 }
+
+.nav__item a {
+    color: #000;
+}
+
+
+.nav .current {
+    border: 2px solid #00AFDA;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav .current:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 9px;
+    background: url('http://i.imgur.com/vtqURNb.png');
+    position: absolute;
+    bottom: 1;
+    left: 44%;
+}
+
 
 /*
  *
@@ -450,6 +479,21 @@ p {
         width: 100%;
         text-align: left;
     }
+    
+    .nav__item a {
+        color: rgba(101, 101, 101, 1);
+	    padding: 1rem 1rem;
+	    display: block;
+	    border-bottom: 1px dotted rgba(101, 101, 101, .4);
+    }
+    
+    .header-search {
+	    padding: 1rem;
+	    display: block;
+	    width: 100%;
+	    color: rgba(101, 101, 101, .5);
+    }
+    
     .header__menu {
         display: inline-block;
         position: absolute;
