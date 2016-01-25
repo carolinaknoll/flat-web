@@ -519,7 +519,11 @@ p {
     .small-hero__title {
         font-size: 1.4em;
         padding: 0px 10px 0px 10px;
-    }    
+    }
+    
+    .footer__paypal:last-child {
+         padding-left: 40px;       
+    }
 }
 
 @media screen and (min-width: 610px) {
@@ -566,5 +570,9 @@ p {
         margin: 20px !important;
     }
 
+    .footer__column {
+        padding-left: 30px;
+    }
+    
 }
 
