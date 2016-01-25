@@ -300,13 +300,12 @@ li {
 }
 
 .column {
-    width: 550px;
-    height: 160px;
+    max-width: 550px;
+    min-height: 160px;
+    width: 100%;   
     background-color: #fff;
     border: 1px solid #5ea6ca;
-    border-bottom: 3px solid #5ea6ca; /*
-    display: table-cell; 
-    vertical-align: middle; */
+    border-bottom: 3px solid #5ea6ca; 
     text-align: justify;    
     display: inline-block;
 }
