@@ -82,8 +82,8 @@ li {
 
 .header__logo {
     display: inline-block;
-    text-indent: -9999px;
-    margin: 1rem 0;
+    text-indent: -9999px;/*
+    margin: 1rem 0; */
     float: left;
 }
 
@@ -99,26 +99,32 @@ li {
     
 } */
 
-.nav {
-    margin: 1rem 0 2rem 0;
-    padding: .5rem;
-    border: none;
+.header__inner {
+    margin: 2rem 0rem 0rem 0rem;     
+}
+
+.nav { 
+    margin: 0rem 10rem 0rem 0rem; /* margin: 1rem 0 2rem 0;  */
+    padding: .5rem; 
+    border: none; 
     
 }
 
 .nav li {
-    display: inline;
+    display: inline-block;
 }
 
 .nav__item a {
-    color: #000;
+    color: #6a6867;
+    padding: 1rem; /* 20px */
 }
 
 
 .nav .current {
     border: 2px solid #00AFDA;
     border-radius: 5px;
-    position: relative;
+    position: relative; 
+    padding: 1rem .5rem; 
 }
 
 .nav .current:after {
@@ -127,11 +133,14 @@ li {
     width: 8px;
     height: 9px;
     background: url('http://i.imgur.com/vtqURNb.png');
-    position: absolute;
-    bottom: 1;
-    left: 44%;
+    position: absolute; 
+    bottom: -14%;
+    left: 45%; 
 }
 
+.nav .current a {
+    color: #00AFDA;
+}
 
 /*
  *
@@ -139,10 +148,14 @@ li {
  * 
  */
 
-.search__form {
-    display: inline-block;
-    width: 15rem;
-    position: relative;
+.header-search {
+    float: right;
+}
+
+.search__form { 
+    display: inline-block; 
+    width: 15rem; 
+    position: relative; 
     vertical-align: bottom;
 }
 
@@ -572,7 +585,5 @@ p {
 
     .footer__column {
         padding-left: 30px;
-    }
-    
+    }    
 }
-
