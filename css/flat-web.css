@@ -132,7 +132,7 @@ li {
     display: block;
     width: 8px;
     height: 9px;
-    background: url('http://i.imgur.com/vtqURNb.png');
+    background: url('../images/blue-checkmark.png');
     position: absolute; 
     bottom: -14%;
     left: 45%; 
@@ -165,7 +165,7 @@ li {
     border: 1px solid #bdbdbd;
     border-radius: 5px;
     position: relative;
-    background: url('http://i.imgur.com/zxVlIlB.png') no-repeat 185px center;
+    background: url('../images/search-icon.png') no-repeat 185px center;
 }
 
 /*
