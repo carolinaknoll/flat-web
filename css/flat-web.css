@@ -390,6 +390,13 @@ li {
     line-height: 1.5em;
 }
 
+/* Small-hero hover effects */
+
+.small-hero__title span:hover {
+     color: #8cbfd9;   
+    
+}
+
 /*
  *
  * Featured
@@ -485,6 +492,12 @@ p {
 
 .footer__paypal {
     padding-left: 110px;
+}
+
+/* Footer hover effects */
+
+.footer__column:hover .footer__title {
+    background:  #8c8c8c;
 }
 
 /*
