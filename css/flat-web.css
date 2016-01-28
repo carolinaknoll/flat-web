@@ -180,31 +180,39 @@ li {
     border-bottom: 4px solid #e2e2e2;
     width: 100%;
     position: relative;
-    min-height: 300px;
+    min-height: 300px; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+}
+
+.hero-text {
+    text-align: center;
 }
 
 .hero__title {
     font-weight: 300;
-    font-size: 4em;
+    font-size: 4.5em;
     color: #9affff;
     line-height: 1;
-    text-shadow: 2px 2px 2px #257a9f;
-    float: left;
-    padding: 20px;
-    
-    display: table-cell; 
-    vertical-align: middle; 
-    text-align: center; 
+    text-shadow: 2px 2px 2px #257a9f; /*
+    padding: 20px; */
+    margin: auto;
 }
-/*
-.hero-item {
-    background: url(../images/hero-item.png);
-    position: absolute;
-    height:300px; 
-    max-width: 100%;
-    max-height: auto;
-    float: right;
-} */
+
+.hero__title span {
+    font-weight: 600;
+}
+
+.hero__subtitle {
+    font-weight: 300;
+    font-size: 2.5em;
+    color: #9affff;
+    line-height: 1;
+    text-shadow: 2px 2px 2px #257a9f;   
+    margin: auto; 
+}
 
 /*
  *
@@ -505,16 +513,16 @@ p {
     padding: 10px 0px 0px 20px;
 }
 
-.footer__contact {
+.column__contact {
     text-align: center;
     right: 0px;
 }
 
-.footer__contact a {
+.column__contact a {
     text-decoration: underline;
 }
 
-.footer__contact li:first-child {
+.column__contact li:first-child {
     font-weight: 700;
     font-size: 1.1em;
 }
