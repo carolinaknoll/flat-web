@@ -183,11 +183,11 @@ li {
     min-height: 300px;
 }
 
-.hero h1 {
+.hero__title {
     font-weight: 300;
-    font-size: 10vh;
+    font-size: 4em;
     color: #9affff;
-    line-height: .8em;
+    line-height: 1;
     text-shadow: 2px 2px 2px #257a9f;
     float: left;
     padding: 20px;
@@ -196,7 +196,7 @@ li {
     vertical-align: middle; 
     text-align: center; 
 }
-
+/*
 .hero-item {
     background: url(../images/hero-item.png);
     position: absolute;
@@ -204,7 +204,7 @@ li {
     max-width: 100%;
     max-height: auto;
     float: right;
-}
+} */
 
 /*
  *
@@ -222,6 +222,15 @@ li {
     position: relative;
     background-size: cover;
     min-height: 460px;
+}
+
+.benefits__text {
+    padding: 0px 5px 45px 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #4793b7;    
 }
 
 .benefits-block {
@@ -324,6 +333,7 @@ li {
     position: relative;
     background-size: cover;
     min-height: 320px;
+    line-height: 1.2;
 }
 
 .advantages__text {
@@ -331,7 +341,8 @@ li {
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    color: #ffffff;
+    line-height: 1.2;
+    color: #fff;
 }
 
 .column {
@@ -387,7 +398,7 @@ li {
     color: #FFF;
     font-weight: 300; 
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.2;
 }
 
 /* Small-hero hover effects */
@@ -411,6 +422,15 @@ li {
     min-height: 285px;  
     display: flex;
     align-items: center;
+}
+
+.featured__title {
+    padding: 30px 5px 20px 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #4793b7;           
 }
 
 .featured-list__logo {
@@ -444,6 +464,15 @@ p {
 }
 
 .footer__title {
+    padding: 30px 5px 0px 5px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #a6a6a6; 
+}
+
+.column__title {
     height: 42px;
     width: 263px;
     background-color: #656565;
@@ -458,7 +487,7 @@ p {
 .footer__column {
     float: left;
     width: 260px;
-    padding-top: 60px;
+    padding-top: 30px; /* 60px */
     padding-right: 20px;
 }
 
@@ -496,7 +525,7 @@ p {
 
 /* Footer hover effects */
 
-.footer__column:hover .footer__title {
+.footer__column:hover .column__title {
     background:  #8c8c8c;
 }
 
