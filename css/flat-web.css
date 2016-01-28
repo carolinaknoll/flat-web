@@ -271,8 +271,8 @@ li {
     padding-right: 4px;
 }
 
-.benefits-block a {
-    color: #5ea6ca;
+.benefits-block a p {
+    color: #4793b7;
     text-align: center;
     padding-top: 20px;
 }
@@ -287,6 +287,28 @@ li {
     margin: 20px;
     width: 100px;
     height: 100px;
+}
+
+/* Benefits hover effects */
+
+.benefits-block:hover .fa {
+    color: #4793b7;
+    border: 8px solid #4793b7;
+}
+
+.benefits-block__bottom:hover {
+    background: #98cde7;
+    border: 2px solid #4793b7; 
+    border-top: 1px solid #4793b7;  
+}
+
+.benefits-block__bottom:hover p {
+    color: #1d3b49;
+}
+
+.benefits-block__bottom:hover a {
+    font-size: 1.2em;
+    text-decoration: none;
 }
 
 /*
