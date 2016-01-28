@@ -355,6 +355,17 @@ li {
     content: url('../images/advantages-caret.png');
 }
 
+/* Advantages hover effects */
+
+.advantages .column:hover {
+    background: #255e7a;
+    border: 2px solid #FFF;
+}
+
+.column:hover .column__list li {
+    color: #FFF;
+}
+
 /*
  *
  * Small Hero
