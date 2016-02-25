@@ -30,15 +30,22 @@
                     <ul class="nav__list">
                         <li class="nav__item current"><a href="#">Home</a></li>
                         <li class="nav__item"><a href="#">Our Services</a></li>
-                        <li class="nav__item"><a href="#">References / Works</a></li>
+                        <li class="nav__item"><a href="#">References</a></li>
                         <li class="nav__item"><a href="#">Career</a></li>
                         <li class="nav__item"><a href="#">Contact us</a></li>
+                        <li class="nav__item">
+                            <form action="http://www.google.com.br/search" class="search__form">
+                                <input type="text" text="" placeholder="Search term..." class="search__box" />
+                            </form>
+                        </li>
                     </ul>
                 </nav>
-
-                <form action="http://www.google.com.br/search" class=" search__form">
-                    <input type="text" text="" placeholder="Search term..." class="search__box" />
-                </form>
+                
+                <div class="search__nav">
+                    <form action="http://www.google.com.br/search" class="search__form">
+                        <input type="text" text="" placeholder="Search term..." class="search__box" />
+                    </form>
+                </div>
 
             </div>
         </div>
@@ -238,6 +245,8 @@
         var menu = document.querySelector('#menu');
         var main = document.querySelector('main');
         var drawer = document.querySelector('.nav');
+        
+        var search = document.querySelector('.search__nav');
 
         menu.addEventListener('click', function (e) {
             drawer.classList.toggle('open');
